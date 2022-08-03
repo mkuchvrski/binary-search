@@ -1,9 +1,10 @@
+#Comparison between basic naive search and binary search
 import random
 import time
 
 from numpy import sort
-# Binary search algorithm
 
+#Basic naive search
 def naive_search(l, target):
     for i in range(len(l)):
         if l[i] == target:
@@ -11,6 +12,7 @@ def naive_search(l, target):
             
     return -1 
 
+#Binary search
 def binary_search(l, target, low=None, high=None):
     if low is None:
         low=0
